@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/" title="Go to Home page">
           <img src="images/logo.png" height="40" alt="Leisha logo" />
         </a>
 
@@ -33,6 +33,7 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarAbout"
+          title="Open menu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,15 +41,26 @@
         <div class="collapse navbar-collapse" id="navbarAbout">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="/" class="nav-link" title="Go to Home page">Home</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link active" aria-current="page">
+              <a
+                href="about.html"
+                class="nav-link active"
+                aria-current="page"
+                title="You are on the About page"
+              >
                 About me
               </a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact me</a>
+              <a
+                href="#contact"
+                class="nav-link"
+                title="Jump to contact section"
+              >
+                Contact me
+              </a>
             </li>
           </ul>
         </div>
@@ -62,8 +74,10 @@
     <!-- Intro Paragraph -->
     <div class="about-paragraphs text-center mt-3">
       <p>
-        I am a front-end developer passionate about building clean, responsive
-        websites with modern tools and technologies.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
+        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
+        blanditiis harum.
       </p>
     </div>
 
@@ -73,21 +87,24 @@
         <img
           src="images/yoga.png"
           class="img-fluid p-2 shadow rounded portfolio-image"
-          alt="Yoga App Screenshot"
+          alt="Yoga App screenshot"
+          title="Yoga App preview"
         />
       </div>
       <div class="col-sm-4">
         <img
           src="images/weather.png"
           class="img-fluid p-2 shadow rounded portfolio-image"
-          alt="Weather App Screenshot"
+          alt="Weather App screenshot"
+          title="Weather App preview"
         />
       </div>
       <div class="col-sm-4">
         <img
           src="images/yogurt.png"
           class="img-fluid p-2 shadow rounded portfolio-image"
-          alt="Yogurt App Screenshot"
+          alt="Yogurt App screenshot"
+          title="Yogurt App preview"
         />
       </div>
     </div>
@@ -95,7 +112,11 @@
     <!-- Contact -->
     <div id="contact" class="mt-5">
       <h2 class="text-center">📮 Contact me</h2>
-      <a href="mailto:leisha@frontend.com" class="email-link">
+      <a
+        href="mailto:leisha@frontend.com"
+        class="email-link"
+        title="Send me an email"
+      >
         leisha@frontend.com
       </a>
     </div>
