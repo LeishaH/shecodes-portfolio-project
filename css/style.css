@@ -120,13 +120,17 @@ p {
 }
 
 /* =========================================
-   RESPONSIVE TYPOGRAPHY
+   RESPONSIVE TYPOGRAPHY (Teacher Style)
 ========================================= */
 
-/* Large tablets */
-@media (max-width: 992px) {
+/* Small laptops / tablets in landscape */
+@media (max-width: 900px) {
   h1 {
     font-size: 72px;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 36px;
   }
 }
 
@@ -135,6 +139,9 @@ p {
   h1 {
     font-size: 48px;
   }
+  h2 {
+    font-size: 32px;
+  }
 }
 
 /* Mobile */
@@ -142,23 +149,10 @@ p {
   h1 {
     font-size: 36px;
   }
-
   h2 {
     font-size: 28px;
   }
-
   h3 {
     font-size: 18px;
-  }
-}
-
-/* =========================================
-   RESPONSIVE IMAGES
-========================================= */
-
-/* Hide portfolio preview images on small screens */
-@media (max-width: 576px) {
-  .portfolio-image {
-    display: none;
   }
 }
