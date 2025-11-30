@@ -1,0 +1,164 @@
+/* =========================================
+   ROOT VARIABLES
+========================================= */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================
+   GLOBAL LAYOUT
+========================================= */
+body {
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   BUTTON STYLES (HERO + CTA)
+========================================= */
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.navigation-links a,
+.contact-link,
+.about-link {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 200px;
+  text-transform: capitalize;
+}
+
+/* Primary button */
+.contact-link {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+
+/* Secondary outline button */
+.about-link {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  background: transparent;
+}
+
+/* =========================================
+   ABOUT PAGE TEXT
+========================================= */
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px 0;
+}
+
+/* =========================================
+   EMAIL LINK
+========================================= */
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   BACK HOME LINK
+========================================= */
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   RESPONSIVE TYPOGRAPHY
+========================================= */
+
+/* Large tablets */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE IMAGES
+========================================= */
+
+/* Hide portfolio preview images on small screens */
+@media (max-width: 576px) {
+  .portfolio-image {
+    display: none;
+  }
+}
